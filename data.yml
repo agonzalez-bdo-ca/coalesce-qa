@@ -1,9 +1,37 @@
 defaultStorageMapping: SRC
 jobs: {}
 locations:
+  ANALYTICS-EDW:
+    mappingDefinitions:
+      "5":
+        database: DEV_ANALYTICS
+        schema: EDW
+      "6":
+        database: TST_ANALYTICS
+        schema: EDW
+      "7":
+        database: ANALYTICS
+        schema: EDW
+  REFINED-DEMO:
+    mappingDefinitions:
+      "5":
+        database: DEV_REFINED
+        schema: DEMO
+      "6":
+        database: TST_REFINED
+        schema: DEMO
+      "7":
+        database: REFINED
+        schema: DEMO
   SRC:
     mappingDefinitions:
       "5":
+        database: SNOWFLAKE_SAMPLE_DATA
+        schema: TPCH_SF1
+      "6":
+        database: SNOWFLAKE_SAMPLE_DATA
+        schema: TPCH_SF1
+      "7":
         database: SNOWFLAKE_SAMPLE_DATA
         schema: TPCH_SF1
 macros: {}
