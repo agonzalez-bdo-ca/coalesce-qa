@@ -119,20 +119,6 @@ steps:
                   - columnCounter: 307
                     stepCounter: "36"
                 transform: ""
-          - columnReference:
-              columnCounter: 316
-              stepCounter: 37
-            dataType: VARCHAR(101)
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: S_COMMENT
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 308
-                    stepCounter: "36"
-                transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
