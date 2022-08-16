@@ -1,5 +1,11 @@
 defaultStorageMapping: SRC
-jobs: {}
+jobs:
+  Job-1:
+    id: 1
+    name: Process EDW
+    steps: []
+    subgraphs:
+      - 1
 locations:
   ANALYTICS-EDW:
     mappingDefinitions:
@@ -2403,5 +2409,10 @@ stepTypes:
             {% endif %}
     name: Persistent Stage
     version: 1
-subgraphs: {}
+subgraphs:
+  Subgraph-1:
+    id: 1
+    name: EDW
+    steps:
+      - "27"
 version: 1
