@@ -47,7 +47,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 293
-                    stepCounter: 35
+                    stepCounter: "35"
                 transform: ""
           - columnReference:
               columnCounter: 270
@@ -61,7 +61,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 294
-                    stepCounter: 35
+                    stepCounter: "35"
                 transform: ""
           - columnReference:
               columnCounter: 271
@@ -75,7 +75,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 295
-                    stepCounter: 35
+                    stepCounter: "35"
                 transform: ""
           - columnReference:
               columnCounter: 272
@@ -89,7 +89,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 296
-                    stepCounter: 35
+                    stepCounter: "35"
                 transform: ""
           - columnReference:
               columnCounter: 273
@@ -103,7 +103,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 297
-                    stepCounter: 35
+                    stepCounter: "35"
                 transform: ""
           - columnReference:
               columnCounter: 274
@@ -117,7 +117,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 298
-                    stepCounter: 35
+                    stepCounter: "35"
                 transform: ""
           - columnReference:
               columnCounter: 275
@@ -131,7 +131,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 299
-                    stepCounter: 35
+                    stepCounter: "35"
                 transform: ""
           - columnReference:
               columnCounter: 276
@@ -145,21 +145,7 @@ steps:
             sourceColumnReferences:
               - columnReferences:
                   - columnCounter: 300
-                    stepCounter: 35
-                transform: ""
-          - columnReference:
-              columnCounter: 277
-              stepCounter: 33
-            dataType: VARCHAR(23)
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: P_COMMENT
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 301
-                    stepCounter: 35
+                    stepCounter: "35"
                 transform: ""
           - acceptedValues:
               strictMatch: true
