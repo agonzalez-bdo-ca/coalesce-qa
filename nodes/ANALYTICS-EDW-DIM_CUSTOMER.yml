@@ -258,14 +258,16 @@ steps:
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - customSQL:
+          - aliases:
+              VW_DIM_CUSTOMER_01_TRANSFORMATIONS: "26"
+            customSQL:
               customSQL: ""
             dependencies:
               - locationName: REFINED-DEMO
-                nodeName: VW_DIM_CUSTOMER_01_TRANSFORM
+                nodeName: VW_DIM_CUSTOMER_01_TRANSFORMATIONS
             join:
-              joinCondition: FROM {{ ref('REFINED-DEMO', 'VW_DIM_CUSTOMER_01_TRANSFORM') }}
-                "VW_DIM_CUSTOMER_01_TRANSFORM"
+              joinCondition: FROM {{ ref('REFINED-DEMO', 'VW_DIM_CUSTOMER_01_TRANSFORMATIONS')
+                }} "VW_DIM_CUSTOMER_01_TRANSFORMATIONS"
             name: DIM_CUSTOMER
             noLinkRefs: []
       name: DIM_CUSTOMER
