@@ -48,7 +48,7 @@ steps:
               - columnReferences:
                   - columnCounter: 213
                     stepCounter: "26"
-                transform: ""
+                transform: C_CUSTKEY + 1
           - columnReference:
               columnCounter: 223
               stepCounter: 27
