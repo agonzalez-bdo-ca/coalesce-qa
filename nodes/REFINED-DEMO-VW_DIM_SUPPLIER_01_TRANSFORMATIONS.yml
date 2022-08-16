@@ -1,0 +1,133 @@
+steps:
+  VW_DIM_SUPPLIER_01_TRANSFORMATIONS-36:
+    operation:
+      config:
+        insertStrategy: UNION
+        selectDistinct: false
+      database: ""
+      dependencies: []
+      description: ""
+      isDataVault: false
+      isMultisource: false
+      locationID: ""
+      locationName: REFINED-DEMO
+      materializationType: view
+      metadata:
+        appliedNodeTests: []
+        columns:
+          - columnReference:
+              columnCounter: 302
+              stepCounter: 36
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: S_SUPPKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 198
+                    stepCounter: "24"
+                transform: ""
+          - columnReference:
+              columnCounter: 303
+              stepCounter: 36
+            dataType: VARCHAR(25)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: S_NAME
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 199
+                    stepCounter: "24"
+                transform: ""
+          - columnReference:
+              columnCounter: 304
+              stepCounter: 36
+            dataType: VARCHAR(40)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: S_ADDRESS
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 200
+                    stepCounter: "24"
+                transform: ""
+          - columnReference:
+              columnCounter: 305
+              stepCounter: 36
+            dataType: NUMBER(38,0)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: S_NATIONKEY
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 201
+                    stepCounter: "24"
+                transform: ""
+          - columnReference:
+              columnCounter: 306
+              stepCounter: 36
+            dataType: VARCHAR(15)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: S_PHONE
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 202
+                    stepCounter: "24"
+                transform: ""
+          - columnReference:
+              columnCounter: 307
+              stepCounter: 36
+            dataType: NUMBER(12,2)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: S_ACCTBAL
+            nullable: false
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 203
+                    stepCounter: "24"
+                transform: ""
+          - columnReference:
+              columnCounter: 308
+              stepCounter: 36
+            dataType: VARCHAR(101)
+            description: ""
+            hashColumns: []
+            hashDetails: null
+            name: S_COMMENT
+            nullable: true
+            sourceColumnReferences:
+              - columnReferences:
+                  - columnCounter: 204
+                    stepCounter: "24"
+                transform: ""
+        cteString: ""
+        enabledColumnTestIDs: []
+        sourceMapping:
+          - customSQL:
+              customSQL: ""
+            dependencies:
+              - locationName: SRC
+                nodeName: SUPPLIER
+            join:
+              joinCondition: FROM {{ ref('SRC', 'SUPPLIER') }} "SUPPLIER"
+            name: VW_DIM_SUPPLIER_01_TRANSFORMATIONS
+            noLinkRefs: []
+      name: VW_DIM_SUPPLIER_01_TRANSFORMATIONS
+      overrideSQL: false
+      schema: ""
+      sqlType: View
+      type: sql
+    stepCounter: "36"

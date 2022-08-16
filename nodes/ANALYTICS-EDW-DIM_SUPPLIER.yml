@@ -1,5 +1,5 @@
 steps:
-  DIM_CUSTOMER-27:
+  DIM_SUPPLIER-37:
     operation:
       config:
         postSQL: ""
@@ -21,139 +21,125 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 221
-              stepCounter: 27
+              columnCounter: 309
+              stepCounter: 37
             config: {}
             dataType: NUMBER
             defaultValue: ""
             description: ""
             hashColumns: []
             isSurrogateKey: true
-            name: DIM_CUSTOMER_KEY
+            name: DIM_SUPPLIER_KEY
             nullable: true
             sourceColumnReferences:
               - columnReferences: []
                 transform: ""
           - columnReference:
-              columnCounter: 222
-              stepCounter: 27
+              columnCounter: 310
+              stepCounter: 37
             dataType: NUMBER(38,0)
             description: ""
             hashColumns: []
             hashDetails: null
             isBusinessKey: true
-            name: C_CUSTKEY
+            name: S_SUPPKEY
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 213
-                    stepCounter: "26"
+                  - columnCounter: 302
+                    stepCounter: "36"
                 transform: ""
           - columnReference:
-              columnCounter: 223
-              stepCounter: 27
+              columnCounter: 311
+              stepCounter: 37
             dataType: VARCHAR(25)
             description: ""
             hashColumns: []
             hashDetails: null
-            name: C_NAME
+            name: S_NAME
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 214
-                    stepCounter: "26"
+                  - columnCounter: 303
+                    stepCounter: "36"
                 transform: ""
           - columnReference:
-              columnCounter: 224
-              stepCounter: 27
+              columnCounter: 312
+              stepCounter: 37
             dataType: VARCHAR(40)
             description: ""
             hashColumns: []
             hashDetails: null
-            name: C_ADDRESS
+            name: S_ADDRESS
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 215
-                    stepCounter: "26"
+                  - columnCounter: 304
+                    stepCounter: "36"
                 transform: ""
           - columnReference:
-              columnCounter: 225
-              stepCounter: 27
+              columnCounter: 313
+              stepCounter: 37
             dataType: NUMBER(38,0)
             description: ""
             hashColumns: []
             hashDetails: null
-            name: C_NATIONKEY
+            name: S_NATIONKEY
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 216
-                    stepCounter: "26"
+                  - columnCounter: 305
+                    stepCounter: "36"
                 transform: ""
           - columnReference:
-              columnCounter: 226
-              stepCounter: 27
+              columnCounter: 314
+              stepCounter: 37
             dataType: VARCHAR(15)
             description: ""
             hashColumns: []
             hashDetails: null
-            name: C_PHONE
+            name: S_PHONE
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 217
-                    stepCounter: "26"
+                  - columnCounter: 306
+                    stepCounter: "36"
                 transform: ""
           - columnReference:
-              columnCounter: 227
-              stepCounter: 27
+              columnCounter: 315
+              stepCounter: 37
             dataType: NUMBER(12,2)
             description: ""
             hashColumns: []
             hashDetails: null
-            name: C_ACCTBAL
+            name: S_ACCTBAL
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 218
-                    stepCounter: "26"
+                  - columnCounter: 307
+                    stepCounter: "36"
                 transform: ""
           - columnReference:
-              columnCounter: 228
-              stepCounter: 27
-            dataType: VARCHAR(10)
+              columnCounter: 316
+              stepCounter: 37
+            dataType: VARCHAR(101)
             description: ""
             hashColumns: []
             hashDetails: null
-            name: C_MKTSEGMENT
+            name: S_COMMENT
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 219
-                    stepCounter: "26"
-                transform: ""
-          - columnReference:
-              columnCounter: 229
-              stepCounter: 27
-            dataType: VARCHAR(117)
-            description: ""
-            hashColumns: []
-            hashDetails: null
-            name: C_COMMENT
-            nullable: true
-            sourceColumnReferences:
-              - columnReferences:
-                  - columnCounter: 220
-                    stepCounter: "26"
+                  - columnCounter: 308
+                    stepCounter: "36"
                 transform: ""
           - acceptedValues:
               strictMatch: true
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 230
-              stepCounter: 27
+              columnCounter: 317
+              stepCounter: 37
             config: {}
             dataType: NUMBER
             defaultValue: ""
@@ -170,8 +156,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 231
-              stepCounter: 27
+              columnCounter: 318
+              stepCounter: 37
             config: {}
             dataType: VARCHAR
             defaultValue: ""
@@ -188,8 +174,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 232
-              stepCounter: 27
+              columnCounter: 319
+              stepCounter: 37
             config: {}
             dataType: TIMESTAMP
             defaultValue: ""
@@ -206,8 +192,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 233
-              stepCounter: 27
+              columnCounter: 320
+              stepCounter: 37
             config: {}
             dataType: TIMESTAMP
             defaultValue: ""
@@ -224,8 +210,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 234
-              stepCounter: 27
+              columnCounter: 321
+              stepCounter: 37
             config: {}
             dataType: TIMESTAMP
             defaultValue: ""
@@ -242,8 +228,8 @@ steps:
               values: []
             appliedColumnTests: {}
             columnReference:
-              columnCounter: 235
-              stepCounter: 27
+              columnCounter: 322
+              stepCounter: 37
             config: {}
             dataType: TIMESTAMP
             defaultValue: ""
@@ -258,21 +244,19 @@ steps:
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - aliases:
-              VW_DIM_CUSTOMER_01_TRANSFORMATIONS: "26"
-            customSQL:
+          - customSQL:
               customSQL: ""
             dependencies:
               - locationName: REFINED-DEMO
-                nodeName: VW_DIM_CUSTOMER_01_TRANSFORMATIONS
+                nodeName: VW_DIM_SUPPLIER_01_TRANSFORMATIONS
             join:
-              joinCondition: FROM {{ ref('REFINED-DEMO', 'VW_DIM_CUSTOMER_01_TRANSFORMATIONS')
-                }} "VW_DIM_CUSTOMER_01_TRANSFORMATIONS"
-            name: DIM_CUSTOMER
+              joinCondition: FROM {{ ref('REFINED-DEMO', 'VW_DIM_SUPPLIER_01_TRANSFORMATIONS')
+                }} "VW_DIM_SUPPLIER_01_TRANSFORMATIONS"
+            name: DIM_SUPPLIER
             noLinkRefs: []
-      name: DIM_CUSTOMER
+      name: DIM_SUPPLIER
       overrideSQL: false
       schema: ""
       sqlType: Dimension
       type: sql
-    stepCounter: "27"
+    stepCounter: "37"
