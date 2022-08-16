@@ -42,7 +42,7 @@ stepTypes:
     id: Dimension
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: ANALYTICS-EDW
       error: null
       nodeMetadataSpec: |-
         capitalized: Dimension
@@ -489,7 +489,7 @@ stepTypes:
     id: Fact
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: ANALYTICS-EDW
       error: null
       nodeMetadataSpec: |
         capitalized: Fact
@@ -1653,7 +1653,7 @@ stepTypes:
     id: Stage
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: REFINED-DEMO
       error: null
       nodeMetadataSpec: |
         capitalized: Stage
@@ -1858,7 +1858,7 @@ stepTypes:
     id: View
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: REFINED-DEMO
       error: null
       nodeMetadataSpec: |
         capitalized: View
@@ -1938,7 +1938,7 @@ stepTypes:
     id: persistentStage
     isDisabled: false
     metadata:
-      defaultStorageLocation: null
+      defaultStorageLocation: REFINED-DEMO
       error: null
       nodeMetadataSpec: |
         capitalized: Persistent Stage
