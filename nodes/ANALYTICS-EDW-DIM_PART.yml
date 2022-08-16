@@ -46,8 +46,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 181
-                    stepCounter: "21"
+                  - columnCounter: 293
+                    stepCounter: 35
                 transform: ""
           - columnReference:
               columnCounter: 270
@@ -60,8 +60,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 182
-                    stepCounter: "21"
+                  - columnCounter: 294
+                    stepCounter: 35
                 transform: ""
           - columnReference:
               columnCounter: 271
@@ -74,8 +74,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 183
-                    stepCounter: "21"
+                  - columnCounter: 295
+                    stepCounter: 35
                 transform: ""
           - columnReference:
               columnCounter: 272
@@ -88,8 +88,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 184
-                    stepCounter: "21"
+                  - columnCounter: 296
+                    stepCounter: 35
                 transform: ""
           - columnReference:
               columnCounter: 273
@@ -102,8 +102,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 185
-                    stepCounter: "21"
+                  - columnCounter: 297
+                    stepCounter: 35
                 transform: ""
           - columnReference:
               columnCounter: 274
@@ -116,8 +116,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 186
-                    stepCounter: "21"
+                  - columnCounter: 298
+                    stepCounter: 35
                 transform: ""
           - columnReference:
               columnCounter: 275
@@ -130,8 +130,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 187
-                    stepCounter: "21"
+                  - columnCounter: 299
+                    stepCounter: 35
                 transform: ""
           - columnReference:
               columnCounter: 276
@@ -144,8 +144,8 @@ steps:
             nullable: false
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 188
-                    stepCounter: "21"
+                  - columnCounter: 300
+                    stepCounter: 35
                 transform: ""
           - columnReference:
               columnCounter: 277
@@ -158,8 +158,8 @@ steps:
             nullable: true
             sourceColumnReferences:
               - columnReferences:
-                  - columnCounter: 189
-                    stepCounter: "21"
+                  - columnCounter: 301
+                    stepCounter: 35
                 transform: ""
           - acceptedValues:
               strictMatch: true
@@ -272,13 +272,16 @@ steps:
         cteString: ""
         enabledColumnTestIDs: []
         sourceMapping:
-          - customSQL:
+          - aliases:
+              VW_DIM_PART_01_TRANSFORMATIONS: "35"
+            customSQL:
               customSQL: ""
             dependencies:
-              - locationName: SRC
-                nodeName: PART
+              - locationName: REFINED-DEMO
+                nodeName: VW_DIM_PART_01_TRANSFORMATIONS
             join:
-              joinCondition: FROM {{ ref('SRC', 'PART') }} "PART"
+              joinCondition: FROM {{ ref('REFINED-DEMO', 'VW_DIM_PART_01_TRANSFORMATIONS') }}
+                "VW_DIM_PART_01_TRANSFORMATIONS"
             name: DIM_PART
             noLinkRefs: []
       name: DIM_PART
