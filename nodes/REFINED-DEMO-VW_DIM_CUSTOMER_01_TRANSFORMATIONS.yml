@@ -1,5 +1,5 @@
 steps:
-  VW_DIM_CUSTOMER_01_TRANSFORM-26:
+  VW_DIM_CUSTOMER_01_TRANSFORMATIONS-26:
     operation:
       config:
         insertStrategy: UNION
@@ -137,9 +137,9 @@ steps:
                 nodeName: CUSTOMER
             join:
               joinCondition: FROM {{ ref('SRC', 'CUSTOMER') }} "CUSTOMER"
-            name: VW_DIM_CUSTOMER_01_TRANSFORM
+            name: VW_DIM_CUSTOMER_01_TRANSFORMATIONS
             noLinkRefs: []
-      name: VW_DIM_CUSTOMER_01_TRANSFORM
+      name: VW_DIM_CUSTOMER_01_TRANSFORMATIONS
       overrideSQL: false
       schema: ""
       sqlType: View

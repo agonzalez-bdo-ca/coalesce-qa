@@ -9,6 +9,9 @@ jobs:
 locations:
   ANALYTICS-EDW:
     mappingDefinitions:
+      "10":
+        database: DEV_ANALYTICS
+        schema: EDW
       "5":
         database: DEV_ANALYTICS
         schema: EDW
@@ -20,6 +23,9 @@ locations:
         schema: EDW
   REFINED-DEMO:
     mappingDefinitions:
+      "10":
+        database: DEV_REFINED
+        schema: DEMO
       "5":
         database: DEV_REFINED
         schema: DEMO
@@ -31,6 +37,9 @@ locations:
         schema: DEMO
   SRC:
     mappingDefinitions:
+      "10":
+        database: SNOWFLAKE_SAMPLE_DATA
+        schema: TPCH_SF1
       "5":
         database: SNOWFLAKE_SAMPLE_DATA
         schema: TPCH_SF1
