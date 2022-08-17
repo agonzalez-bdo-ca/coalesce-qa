@@ -129,7 +129,7 @@ steps:
                 transform: ""
           - columnReference:
               columnCounter: 301
-              stepCounter: 35
+              stepCounter: "35"
             dataType: VARCHAR(23)
             description: ""
             hashColumns: []
